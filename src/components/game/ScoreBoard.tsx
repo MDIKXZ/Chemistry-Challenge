@@ -38,9 +38,9 @@ const ScoreBoard = ({ teamAName, teamBName, teamAScore, teamBScore, currentTeam,
           </div>
           
           <div className="flex items-center justify-center gap-3 py-2">
-            <Trophy className={`w-8 h-8 text-chemistry-gold transition-transform duration-300 ${
-              currentTeam === "A" ? "scale-110 animate-pulse" : ""
-            }`} />
+            {teamAScore > teamBScore && (
+              <Trophy className="w-8 h-8 text-chemistry-gold animate-[scale-in_0.5s_ease-out,float_3s_ease-in-out_infinite] drop-shadow-[0_0_10px_rgba(255,215,0,0.5)]" />
+            )}
             <span className="text-6xl font-bold bg-gradient-to-br from-teamA to-teamA/80 bg-clip-text text-transparent">
               {teamAScore}
             </span>
@@ -108,9 +108,9 @@ const ScoreBoard = ({ teamAName, teamBName, teamAScore, teamBScore, currentTeam,
           </div>
           
           <div className="flex items-center justify-center gap-3 py-2">
-            <Trophy className={`w-8 h-8 text-chemistry-gold transition-transform duration-300 ${
-              currentTeam === "B" ? "scale-110 animate-pulse" : ""
-            }`} />
+            {teamBScore > teamAScore && (
+              <Trophy className="w-8 h-8 text-chemistry-gold animate-[scale-in_0.5s_ease-out,float_3s_ease-in-out_infinite] drop-shadow-[0_0_10px_rgba(255,215,0,0.5)]" />
+            )}
             <span className="text-6xl font-bold bg-gradient-to-br from-teamB to-teamB/80 bg-clip-text text-transparent">
               {teamBScore}
             </span>

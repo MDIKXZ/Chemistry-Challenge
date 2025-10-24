@@ -121,26 +121,36 @@ const TeamSetup = ({ onStartGame, onBack }: TeamSetupProps) => {
 
       {/* Duplicate Names Dialog */}
       <AlertDialog open={showDuplicateDialog} onOpenChange={setShowDuplicateDialog}>
-        <AlertDialogContent className="bg-card/95 backdrop-blur-md border-2 border-chemistry-purple/30 animate-scale-in">
-          <AlertDialogHeader>
-            <AlertDialogTitle className="text-2xl text-center bg-gradient-to-r from-teamA to-teamB bg-clip-text text-transparent">
-              ⚠️ أسماء الفرق متطابقة
-            </AlertDialogTitle>
-            <AlertDialogDescription className="text-center text-lg text-muted-foreground pt-4">
-              لقد قمت بإدخال نفس الاسم للفريقين. هل أنت متأكد من رغبتك في الاستمرار بنفس الأسماء؟
-            </AlertDialogDescription>
-          </AlertDialogHeader>
-          <AlertDialogFooter className="flex gap-3 sm:gap-3 flex-col sm:flex-row-reverse">
-            <AlertDialogAction
-              onClick={handleConfirmDuplicate}
-              className="bg-gradient-to-r from-teamA to-teamB hover:from-teamA/90 hover:to-teamB/90 shadow-lg transition-all duration-300"
-            >
-              نعم، استمر
-            </AlertDialogAction>
-            <AlertDialogCancel className="border-2 hover:bg-accent">
-              لا، سأغير الأسماء
-            </AlertDialogCancel>
-          </AlertDialogFooter>
+        <AlertDialogContent className="bg-card/95 backdrop-blur-md border-2 border-chemistry-purple/30 shadow-2xl max-w-md">
+          <div className="animate-[scale-in_0.3s_ease-out]">
+            <AlertDialogHeader className="space-y-4">
+              <div className="flex justify-center">
+                <div className="relative">
+                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-teamA/20 to-teamB/20 flex items-center justify-center animate-pulse">
+                    <span className="text-5xl animate-bounce">⚠️</span>
+                  </div>
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-teamA to-teamB opacity-20 blur-xl animate-pulse" />
+                </div>
+              </div>
+              <AlertDialogTitle className="text-3xl text-center font-bold bg-gradient-to-r from-teamA via-chemistry-purple to-teamB bg-clip-text text-transparent leading-relaxed">
+                أسماء الفرق متطابقة
+              </AlertDialogTitle>
+              <AlertDialogDescription className="text-center text-lg text-muted-foreground leading-relaxed px-4">
+                لقد قمت بإدخال نفس الاسم للفريقين. هل أنت متأكد من رغبتك في الاستمرار بنفس الأسماء؟
+              </AlertDialogDescription>
+            </AlertDialogHeader>
+            <div className="flex flex-col gap-3 mt-8 px-6">
+              <AlertDialogAction
+                onClick={handleConfirmDuplicate}
+                className="w-full bg-gradient-to-r from-teamA via-chemistry-purple to-teamB hover:from-teamA/90 hover:via-chemistry-purple/90 hover:to-teamB/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg py-6 animate-[fade-in_0.4s_ease-out]"
+              >
+                نعم، استمر
+              </AlertDialogAction>
+              <AlertDialogCancel className="w-full border-2 hover:bg-accent/50 text-lg py-6 transition-all duration-300 hover:scale-105 animate-[fade-in_0.4s_ease-out_0.1s_both]">
+                لا، سأغير الأسماء
+              </AlertDialogCancel>
+            </div>
+          </div>
         </AlertDialogContent>
       </AlertDialog>
     </div>
