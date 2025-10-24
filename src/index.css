@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 230 35% 7%;
+    --foreground: 210 40% 98%;
+
+    --card: 230 30% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 230 30% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 280 70% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 180 60% 50%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 230 25% 20%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 280 70% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 230 25% 18%;
+    --input: 230 25% 18%;
+    --ring: 280 70% 60%;
+
+    --radius: 0.75rem;
+
+    /* Chemistry Game Colors */
+    --team-a: 210 100% 50%;
+    --team-a-glow: 210 100% 60%;
+    --team-b: 0 100% 50%;
+    --team-b-glow: 0 100% 60%;
+    
+    --chemistry-green: 150 80% 45%;
+    --chemistry-purple: 280 70% 55%;
+    --chemistry-gold: 45 100% 50%;
+    
+    --glow-sm: 0 0 10px;
+    --glow-md: 0 0 20px;
+    --glow-lg: 0 0 30px;
+  }
+
+  @keyframes pulse-subtle {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.85; }
+  }
+}
+
+@layer utilities {
+  .animate-pulse-subtle {
+    animation: pulse-subtle 3s ease-in-out infinite;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
