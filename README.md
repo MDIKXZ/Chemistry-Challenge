@@ -3,59 +3,63 @@
 
 ---
 
-### 🎮 Overview  
-**Chemistry Challenge** is a fully custom-built interactive web game created entirely from scratch by **Haitham Muneer Al-Jabri**.  
-It transforms traditional chemistry lessons into a dynamic, competitive, and visually engaging experience that merges learning with play.  
+## 🌍 Overview
 
-Inspired by *Jeopardy!*, this project reimagines classroom quizzes into a two-team duel format with lifelines, timers, animations, and a sleek chemistry-themed design.  
+### 🎮 Introduction  
+**Chemistry Challenge** is an interactive educational web game developed entirely by **Haitham Muneer Al-Jabri** using the **Lovable.dev** platform.  
+It transforms traditional chemistry lessons into a fun, competitive, and visually engaging experience — blending education with creativity and modern web design.  
+
+Inspired by *Jeopardy!*, this project reimagines the classic quiz format as a two-team duel with lifelines, timers, smooth animations, and a polished chemistry-themed interface.  
 
 ---
 
 ### 🧠 Development Journey  
 
 **1. Concept & Brainstorming**  
-The idea started with the goal of making chemistry fun and interactive through gamification — turning lessons into a challenge rather than memorization.  
+The idea began with a goal: to turn chemistry from a memorization-heavy subject into an interactive and enjoyable learning experience through gamification and visual design.  
 
-**2. Design & Planning**  
-Every feature was mapped in detail: timers, double points logic, lifelines, and the full flow from team selection to the final score.  
-Smooth animation and user experience were top priorities.  
+**2. Planning & Design**  
+The gameplay structure, question flow, timers, lifeline logic, and scoring system were carefully mapped out to create an engaging classroom experience.  
+Every animation, sound, and interaction was planned to ensure clarity, excitement, and immersion.  
 
-**3. Visual Identity**  
-The interface was designed manually with a **scientific aesthetic** — animated molecules, glowing lab effects, and dynamic layouts inspired by laboratory visuals.  
+**3. Development via Lovable**  
+The game was built using the **Lovable.dev** platform as a modern development environment for assembling and styling components.  
+However, all creative direction, layout composition, design choices, color schemes, and gameplay logic were **personally designed and implemented** by the developer.  
+Lovable was used as a **tool**, while the **idea, logic, and creative execution** were fully handcrafted.  
 
-**4. Manual Development**  
-Developed completely from scratch using **HTML, CSS, and JavaScript**, later enhanced with **React, TypeScript, Vite, TailwindCSS, and shadcn-ui** to achieve a high-quality responsive experience.  
-No templates or auto-generated components were used. Every part of the logic and animation was handwritten.  
+**4. Visual Identity**  
+The project features a modern chemistry-inspired interface — animated molecules, soft glowing effects, floating lab visuals, and smooth transitions that make learning feel alive.  
 
 **5. Smart AI Assistance**  
-AI tools were used as creative assistants for code optimization, design refinement, and idea iteration —  
-but every concept, structure, and interaction was fully directed and implemented by hand.  
+AI tools were used selectively for design inspiration, minor syntax checks, and UI optimization.  
+No AI-generated code or templates were used; all game logic and flow were manually crafted by the developer.  
 
-**6. Testing & Polish**  
-Multiple iterations were tested to ensure stable timing, smooth animations, and seamless performance across devices.  
+**6. Testing & Optimization**  
+The project was tested and refined across multiple devices to ensure smooth animations, accurate timing, and seamless responsiveness.  
 
 ---
 
 ### 💡 Features  
 
-- 🎨 Smooth and modern animations.  
-- ⚔️ Two-team competition system with custom names.  
-- 🧩 12 questions divided into difficulty levels (4×200, 4×400, 4×600).  
+- 🎨 Elegant visual design with smooth animations and transitions.  
+- ⚔️ Two-team competitive mode with editable team names.  
+- 🧩 12 total questions across 3 difficulty levels (4×200, 4×400, 4×600).  
 - 🧠 Three lifelines:
-  - Multiple-choice assist  
+  - Multiple-choice assistance  
   - Teacher-help timer  
-  - Double-points (strategic risk and reward system)  
-- ⏱️ Timers for both teams with sound effects.  
-- 🧪 Chemistry-themed visuals with clear color-coded teams.  
-- 🧭 Manual control for timers, scores, and question management.  
-- 💻 Responsive, clean, and easy-to-use design for classrooms or presentations.  
+  - Double-points (risk and reward system)  
+- ⏱️ Dual timer with sound effects for both teams.  
+- 🧪 Chemistry-themed layout with color-coded teams.  
+- 🧭 Full manual control for timers, points, and question flow.  
+- 💻 Fully responsive and optimized for classroom or presentation use.  
 
 ---
 
 ### 🧰 Tech Stack  
 
-Built using:
+Developed using:
 
+- ⚙️ **Lovable.dev** (main development environment)  
 - ⚡ **Vite**  
 - ⚛️ **React**  
 - 🧱 **shadcn-ui**  
@@ -66,9 +70,9 @@ Built using:
 
 ### ⚙️ How to Edit or Run the Project  
 
-#### 🔹 Option 1: Use Lovable (Recommended)  
-You can edit or view the project directly in Lovable.  
-All changes are synced automatically to GitHub.  
+#### 🔹 Option 1: Using Lovable (Recommended)  
+You can view and edit the project directly on the Lovable platform.  
+All changes are automatically synced with GitHub.  
 
 **Project URL:**  
 [https://lovable.dev/projects/fec88260-118b-4a95-8c61-c9e6ece445e2](https://lovable.dev/projects/fec88260-118b-4a95-8c61-c9e6ece445e2)
@@ -93,26 +97,31 @@ npm run dev
 ```
 🔹 Option 3: Edit Directly on GitHub
 
-Click the ✏️ (Edit) icon on any file.
+Open any file and click ✏️ (Edit).
 
 Commit your changes — they’ll sync automatically with Lovable.
 
 🔹 Option 4: Use GitHub Codespaces
 
-Open Code → Codespaces → New Codespace
+Go to Code → Codespaces → New Codespace
 
-Edit the project online instantly, then push changes when ready.
+Edit and preview the project directly online, then push changes when finished.
 
-👨‍💻 Author
+👨‍💻 Developer
 
 Haitham Muneer Al-Jabri
-Solo developer, designer, and creative technologist passionate about combining interactivity, education, and design.
+A developer and designer passionate about combining interactivity, education, and modern web design.
+Believes that tools like Lovable empower creativity — but true innovation comes from human thought, structure, and artistic vision.
 
-Every animation, function, and interface in this project was handcrafted line by line.
-Proof that persistence and creativity can turn code into art.
+This project was entirely imagined, structured, and refined by hand,
+using smart tools as assistants, not replacements — turning code into a creative expression.
 
+🧭 License
 
+This project is created for educational and portfolio purposes only.
+© 2025 Haitham Muneer Al-Jabri — All Rights Reserved.
 
+-
 
 
 # 🧪 تحدي الكيمياء: المواجهة التفاعلية  
