@@ -106,7 +106,7 @@ npm i
 
 # 4️⃣ Start the development server
 npm run dev
-
+```
 🔹 Option 3: Edit Directly on GitHub
 
 Open any file and click the ✏️ (Edit) icon.
