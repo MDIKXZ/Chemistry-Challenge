@@ -121,7 +121,7 @@ using smart tools as assistants, not replacements — turning code into a creati
 This project is created for educational and portfolio purposes only.
 © 2025 Haitham Muneer Al-Jabri — All Rights Reserved.
 
--
+
 
 
 # 🧪 تحدي الكيمياء: المواجهة التفاعلية  
