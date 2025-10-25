@@ -119,26 +119,10 @@ Go to Code → Codespaces → New Codespace
 
 Edit the project online instantly, then push changes.
 
-🚀 Deployment
-
-To deploy publicly:
-
-Open your project in Lovable
-
-Click Share → Publish
-
-To use your own domain:
-Go to Project → Settings → Domains → Connect Domain
-📘 Custom Domain Setup Guide
-
-🌐 Live Demo
-
-🔗 View the Live Project
-
 🧭 License
 
-This project is for educational and portfolio use.
-© 2025 Haitham Muneer Al-Jabri — All Rights Reserved.
+> This project is for educational and portfolio use.
+> © 2025 Haitham Muneer Al-Jabri — All Rights Reserved.
 
 ___________________________________________________________________
 
