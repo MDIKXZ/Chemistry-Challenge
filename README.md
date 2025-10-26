@@ -75,7 +75,7 @@ You can view and edit the project directly on the Lovable platform.
 All changes are automatically synced with GitHub.  
 
 **Project URL:**  
-[element-duel-15031-39013-53756-70714-39728.lovable.app](https://lovable.dev/projects/fec88260-118b-4a95-8c61-c9e6ece445e2)
+[element-duel-15031-39013-53756-70714-39728.lovable.app](https://element-duel-15031-39013-53756-70714-39728.lovable.app/)
 
 #### 🔹 Option 2: Run Locally  
 
