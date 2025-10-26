@@ -203,7 +203,7 @@ This project is created for educational and portfolio purposes only.
 وجميع التغييرات تتم مزامنتها تلقائيًا مع GitHub.  
 
 **رابط المشروع:**  
-[https://lovable.dev/projects/fec88260-118b-4a95-8c61-c9e6ece445e2](https://lovable.dev/projects/fec88260-118b-4a95-8c61-c9e6ece445e2)
+[element-duel-15031-39013-53756-70714-39728.lovable.app](https://element-duel-15031-39013-53756-70714-39728.lovable.app/)
 
 #### 🔹 الخيار 2: تشغيل محليًا  
 
