@@ -63,7 +63,7 @@ Developed using:
 - ⚡ **Vite**  
 - ⚛️ **React**  
 - 🧱 **shadcn-ui**  
-- 💅 **Tailwind CSS**  
+- ⚙️ **Tailwind CSS**  
 - 📜 **TypeScript**
 
 ---
@@ -191,7 +191,7 @@ This project is created for educational and portfolio purposes only.
 - ⚡ **Vite**  
 - ⚛️ **React**  
 - 🧱 **shadcn-ui**  
-- 💅 **Tailwind CSS**  
+- ⚙️ **Tailwind CSS**  
 - 📜 **TypeScript**
 
 ---
