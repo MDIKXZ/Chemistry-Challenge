@@ -1,3 +1,7 @@
+![a-cinematic-web-banner-design-featuring-_oL6adSMNSGykgWLClZqbgw_mtzWygW5RcuKuWZSugbTLQ](https://github.com/user-attachments/assets/1196a731-820f-4650-9b0a-7b8efa67fe15)
+
+
+
 # 🧪 Chemistry Challenge: The Interactive Duel  
 ### Developed & Designed by **Haitham Muneer Al-Jabri**
 
