@@ -1,7 +1,3 @@
-![a-cinematic-web-banner-design-featuring-_oL6adSMNSGykgWLClZqbgw_mtzWygW5RcuKuWZSugbTLQ](https://github.com/user-attachments/assets/1196a731-820f-4650-9b0a-7b8efa67fe15)
-
-
-
 # 🧪 Chemistry Challenge: The Interactive Duel  
 ### Developed & Designed by **Haitham Muneer Al-Jabri**
 
@@ -26,21 +22,6 @@ The idea began with a goal: to turn chemistry from a memorization-heavy subject 
 The gameplay structure, question flow, timers, lifeline logic, and scoring system were carefully mapped out to create an engaging classroom experience.  
 Every animation, sound, and interaction was planned to ensure clarity, excitement, and immersion.  
 
-**3. Development via Lovable**  
-The game was built using the **Lovable.dev** platform as a modern development environment for assembling and styling components.  
-However, all creative direction, layout composition, design choices, color schemes, and gameplay logic were **personally designed and implemented** by the developer.  
-Lovable was used as a **tool**, while the **idea, logic, and creative execution** were fully handcrafted.  
-
-**4. Visual Identity**  
-The project features a modern chemistry-inspired interface — animated molecules, soft glowing effects, floating lab visuals, and smooth transitions that make learning feel alive.  
-
-**5. Smart AI Assistance**  
-AI tools were used selectively for design inspiration, minor syntax checks, and UI optimization.  
-No AI-generated code or templates were used; all game logic and flow were manually crafted by the developer.  
-
-**6. Testing & Optimization**  
-The project was tested and refined across multiple devices to ensure smooth animations, accurate timing, and seamless responsiveness.  
-
 ---
 
 ### 💡 Features  
@@ -52,8 +33,7 @@ The project was tested and refined across multiple devices to ensure smooth anim
   - Multiple-choice assistance  
   - Teacher-help timer  
   - Double-points (risk and reward system)  
-- ⏱️ Dual timer with sound effects for both teams.  
-- 🧪 Chemistry-themed layout with color-coded teams.  
+  - 🧪 Chemistry-themed layout with color-coded teams.  
 - 🧭 Full manual control for timers, points, and question flow.  
 - 💻 Fully responsive and optimized for classroom or presentation use.  
 
@@ -67,7 +47,7 @@ Developed using:
 - ⚡ **Vite**  
 - ⚛️ **React**  
 - 🧱 **shadcn-ui**  
-- ⚙️ **Tailwind CSS**  
+- 💅 **Tailwind CSS**  
 - 📜 **TypeScript**
 
 ---
@@ -79,7 +59,7 @@ You can view and edit the project directly on the Lovable platform.
 All changes are automatically synced with GitHub.  
 
 **Project URL:**  
-[element-duel-15031-39013-53756-70714-39728.lovable.app](https://element-duel-15031-39013-53756-70714-39728.lovable.app/)
+[https://lovable.dev/projects/fec88260-118b-4a95-8c61-c9e6ece445e2](https://lovable.dev/projects/fec88260-118b-4a95-8c61-c9e6ece445e2)
 
 #### 🔹 Option 2: Run Locally  
 
@@ -99,13 +79,24 @@ npm i
 # 4️⃣ Start the development server
 npm run dev
 ```
-🔹 Option 3: Edit Directly on GitHub
+
+#### 🔹 Option 3: Easy Launch with Launcher (Windows)  
+
+For Windows users, you can easily launch the game using the provided launcher files:
+
+1. **Double-click `launcher.html`** - A user-friendly interface with a launch button
+2. **Or double-click `launch-game.bat`** - A batch file that builds and runs the game
+3. **Or run `launch-game.ps1`** - A PowerShell script that builds and runs the game
+
+After launching, open your browser and go to: http://localhost:4173
+
+#### 🔹 Option 4: Edit Directly on GitHub
 
 Open any file and click ✏️ (Edit).
 
 Commit your changes — they’ll sync automatically with Lovable.
 
-🔹 Option 4: Use GitHub Codespaces
+#### 🔹 Option 5: Use GitHub Codespaces
 
 Go to Code → Codespaces → New Codespace
 
@@ -154,22 +145,6 @@ This project is created for educational and portfolio purposes only.
 تم إعداد خريطة كاملة لتدفق اللعبة — من شاشة البداية إلى عرض الأسئلة وتحديد الفائز.  
 كل حركة، لون، وصوت تمت دراسته بعناية لتحقيق تجربة سلسة ومشوقة.  
 
-**3. التطوير عبر منصة Lovable**  
-تم استخدام منصة **Lovable.dev** كبيئة تطوير حديثة لتصميم الواجهة وتجميع المكونات،  
-لكن كل الأفكار، الهيكلة، ترتيب العناصر، واختيارات الألوان والحركات كانت تصميمًا شخصيًا بالكامل.  
-اعتمدت المنصة كأداة تنفيذ ذكية، بينما التصميم والمنطق البرمجي والتجربة العامة كانت **عملًا فرديًا إبداعيًا بالكامل**.  
-
-**4. الهوية البصرية**  
-تم بناء ثيم علمي أنيق يعكس بيئة المختبر —  
-فقاعات متحركة، رموز كيميائية، ألوان متناسقة، وانتقالات ناعمة تزيد من جمالية العرض.  
-
-**5. استخدام الذكاء الاصطناعي كمساعد تقني**  
-تم استخدام أدوات الذكاء الاصطناعي لتحسين بعض جوانب التجربة مثل اختيار الألوان أو تنظيم النصوص،  
-لكن دون الاعتماد عليها في التصميم أو المنطق البرمجي، فكل ما تراه هو نتاج عمل يدوي وإبداعي شخصي.  
-
-**6. الاختبار والتحسين**  
-تم اختبار المشروع في أكثر من بيئة لضمان الأداء السلس، وسرعة الاستجابة، وتجربة استخدام خالية من الأخطاء.  
-
 ---
 
 ### 💡 المميزات  
@@ -181,8 +156,7 @@ This project is created for educational and portfolio purposes only.
   - المساعدة بالخيارات  
   - مؤقت الاستعانة بالمعلم  
   - مضاعفة النقاط (نظام مخاطرة ومكافأة).  
-- ⏱️ مؤقتات تفاعلية لكل فريق مع مؤثرات صوتية.  
-- 🧪 تصميم كيميائي غني بالألوان والحركات.  
+  - 🧪 تصميم كيميائي غني بالألوان والحركات.  
 - 💻 واجهة متجاوبة وسهلة الاستخدام تصلح للعروض الصفية أو التعليمية.  
 
 ---
@@ -195,7 +169,7 @@ This project is created for educational and portfolio purposes only.
 - ⚡ **Vite**  
 - ⚛️ **React**  
 - 🧱 **shadcn-ui**  
-- ⚙️ **Tailwind CSS**  
+- 💅 **Tailwind CSS**  
 - 📜 **TypeScript**
 
 ---
@@ -207,7 +181,7 @@ This project is created for educational and portfolio purposes only.
 وجميع التغييرات تتم مزامنتها تلقائيًا مع GitHub.  
 
 **رابط المشروع:**  
-[element-duel-15031-39013-53756-70714-39728.lovable.app](https://element-duel-15031-39013-53756-70714-39728.lovable.app/)
+[https://lovable.dev/projects/fec88260-118b-4a95-8c61-c9e6ece445e2](https://lovable.dev/projects/fec88260-118b-4a95-8c61-c9e6ece445e2)
 
 #### 🔹 الخيار 2: تشغيل محليًا  
 
@@ -227,13 +201,24 @@ npm i
 # 4️⃣ تشغيل خادم التطوير
 npm run dev
 ```
-🔹 الخيار 3: التعديل عبر GitHub
+
+#### 🔹 الخيار 3: بدء تشغيل بسيط باستخدام المثبت (ويندوز)  
+
+للأشخاص الذين يستخدمون ويندوز، يمكنك بدء تشغيل اللعبة بسهولة باستخدام الملفات المقدمة:
+
+1. **انقر بزر الماوس الأيمن على `launcher.html`** - واجهة مستخدمية سهلة مع زر تشغيل
+2. **أو انقر بزر الماوس الأيمن على `launch-game.bat`** - ملف تشغيل يقوم ببناء وإطلاق اللعبة
+3. **أو قم بتشغيل `launch-game.ps1`** - نص برمجي يقوم ببناء وإطلاق اللعبة
+
+بعد بدء التشغيل، افتح متصفحك واذهب إلى: http://localhost:4173
+
+#### 🔹 الخيار 4: التعديل عبر GitHub
 
 افتح أي ملف واضغط ✏️ لتعديله.
 
 بعد الحفظ، يتم تحديث المشروع تلقائيًا على Lovable.
 
-🔹 الخيار 4: GitHub Codespaces
+#### 🔹 الخيار 5: GitHub Codespaces
 
 انتقل إلى Code → Codespaces → New Codespace
 

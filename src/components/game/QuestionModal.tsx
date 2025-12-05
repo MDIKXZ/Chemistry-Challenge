@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { X, Eye, Pause, RotateCcw, ListOrdered, Users2, Zap } from "lucide-react";
 import { Question } from "./GameBoard";
 import Timer from "./Timer";
+import AnswerCelebration from "./AnswerCelebration";
 
 interface HelpUsage {
   multipleChoice: boolean;
@@ -45,6 +46,7 @@ const QuestionModal = ({ question, onClose, onAnswer, currentTeam, teamAName, te
   const [teacherTimerKey, setTeacherTimerKey] = useState(0);
   const [teacherTimerPaused, setTeacherTimerPaused] = useState(false);
   const [mainTimerEnded, setMainTimerEnded] = useState(false);
+  const [showCelebration, setShowCelebration] = useState<"A" | "B" | "none" | null>(null);
   
   // Get the current team's help status based on which timer is active
   const activeTeam = isTeamBTimer ? (currentTeam === "A" ? "B" : "A") : currentTeam;
@@ -91,6 +93,11 @@ const QuestionModal = ({ question, onClose, onAnswer, currentTeam, teamAName, te
   };
 
   const handleTeamAnswer = (team: "A" | "B" | "none") => {
+    // Show celebration for correct answers
+    if (team !== "none") {
+      setShowCelebration(team);
+    }
+    
     const points = activeDoublePoints ? question.points * 2 : question.points;
     const finalHelpUsed = { ...helpUsed, doublePoints: activeDoublePoints };
     onAnswer(team, points, finalHelpUsed);
@@ -151,6 +158,14 @@ const QuestionModal = ({ question, onClose, onAnswer, currentTeam, teamAName, te
 
   return (
     <div className="fixed inset-0 bg-background/95 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fade-in">
+      {/* Celebration Animation */}
+      {showCelebration && (
+        <AnswerCelebration 
+          team={showCelebration} 
+          onClose={() => setShowCelebration(null)} 
+        />
+      )}
+      
       <div className="bg-card border border-border rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
         {/* Header */}
         <div className="sticky top-0 bg-card/95 backdrop-blur-sm border-b border-border p-6 flex items-center justify-between">

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Trophy, Zap, Users2, ListOrdered, Clock, Target } from "lucide-react";
+import { ArrowRight, Trophy, Zap, Users2, ListOrdered, Clock, Target, RotateCcw, Play } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const Instructions = () => {
@@ -24,10 +24,17 @@ const Instructions = () => {
           </div>
           <div className="text-right space-y-3">
             <p className="text-xl leading-relaxed text-foreground">
-              مسابقة كيميائية تنافسية بين فريقين، يختار كل فريق أسئلة بنقاط مختلفة (200، 400، 600) من أربع فئات.
+              مسابقة كيميائية تنافسية بين فريقين في نظام جولتين:
             </p>
-            <p className="text-2xl font-bold text-chemistry-gold">
-              🏆 الفريق الذي يجمع أكبر عدد من النقاط يفوز!
+            <div className="bg-gradient-to-r from-chemistry-gold/20 to-chemistry-purple/20 rounded-xl p-4 mt-4">
+              <ul className="text-right space-y-2 text-lg text-foreground">
+                <li>• الجولة الأولى: أسئلة حول المحاليل والخصائص الفيزيائية</li>
+                <li>• الجولة الثانية: أسئلة حول الأحماض والقواعد</li>
+                <li>• النتيجة النهائية: مجموع النقاط من الجولتين</li>
+              </ul>
+            </div>
+            <p className="text-2xl font-bold text-chemistry-gold mt-4">
+              🏆 الفريق الذي يجمع أكبر عدد من النقاط في الجولتين يفوز!
             </p>
           </div>
         </section>
@@ -45,6 +52,8 @@ const Instructions = () => {
               { step: "3", text: "إذا لم يجيبوا، ينتقل السؤال للفريق الآخر (15 ثانية)", color: "chemistry-purple" },
               { step: "4", text: "الإجابة الصحيحة تحصد نقاط السؤال", color: "chemistry-gold" },
               { step: "5", text: "ينتقل الدور للفريق الآخر بعد كل سؤال", color: "chemistry-green" },
+              { step: "6", text: "نهاية الجولة الأولى: عرض النتائج والانتقال للجولة الثانية", color: "chemistry-gold" },
+              { step: "7", text: "نهاية الجولة الثانية: إعلان الفائز النهائي", color: "chemistry-purple" },
             ].map((item, idx) => (
               <div key={idx} className="flex items-center gap-4 bg-muted/30 rounded-xl p-4 hover:bg-muted/50 transition-all">
                 <div className={`w-12 h-12 rounded-full bg-${item.color}/20 border-2 border-${item.color} flex items-center justify-center flex-shrink-0`}>
@@ -63,7 +72,7 @@ const Instructions = () => {
             <Zap className="w-10 h-10 text-chemistry-gold" />
           </div>
           <p className="text-xl text-center bg-gradient-to-r from-chemistry-gold/20 to-chemistry-purple/20 rounded-xl p-4 font-bold text-foreground mb-6">
-            ⭐ كل فريق يستطيع استخدام كل وسيلة مرة واحدة فقط
+            ⭐ كل فريق يستطيع استخدام كل وسيلة مرة واحدة فقط (تُجدّد تلقائياً في الجولة الثانية)
           </p>
           
           <div className="grid md:grid-cols-3 gap-6">
@@ -140,7 +149,7 @@ const Instructions = () => {
             <Trophy className="w-12 h-12 text-chemistry-gold" />
           </div>
           <p className="text-2xl text-center leading-relaxed text-foreground font-semibold">
-            بعد الإجابة على جميع الأسئلة، الفريق صاحب أعلى نقاط يفوز بالتحدي! 🏆
+            بعد الإجابة على جميع الأسئلة في الجولتين، الفريق صاحب أعلى نقاط مجمع يفوز بالتحدي! 🏆
           </p>
           <div className="flex justify-center gap-2 pt-4">
             {[...Array(5)].map((_, i) => (

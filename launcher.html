@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مُطلق لعبة تحدى الكيمياء</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            direction: rtl;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        
+        .launch-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 20px 40px;
+            font-size: 1.5em;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            margin: 20px 0;
+        }
+        
+        .launch-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .launch-btn:active {
+            transform: translateY(0);
+        }
+        
+        .instructions {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: right;
+        }
+        
+        .instructions h2 {
+            color: #333;
+            margin-top: 0;
+        }
+        
+        .instructions ol {
+            padding-right: 20px;
+        }
+        
+        .instructions li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        
+        .status {
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 10px;
+            display: none;
+        }
+        
+        .status.loading {
+            background: #e3f2fd;
+            display: block;
+        }
+        
+        .status.success {
+            background: #e8f5e9;
+            display: block;
+        }
+        
+        .status.error {
+            background: #ffebee;
+            display: block;
+        }
+        
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 مُطلق لعبة تحدى الكيمياء</h1>
+        <p class="subtitle">ابدأ اللعبة بضغطة زر واحدة</p>
+        
+        <button class="launch-btn" onclick="launchGame()">
+            ▶️ تشغيل اللعبة
+        </button>
+        
+        <div id="status" class="status"></div>
+        
+        <div class="instructions">
+            <h2>كيفية الاستخدام:</h2>
+            <ol>
+                <li>اضغط على زر "تشغيل اللعبة"</li>
+                <li>انتظر حتى يتم بناء اللعبة وتشغيل الخادم</li>
+                <li>اضغط على زر المعاينة لفتح اللعبة في المتصفح</li>
+                <li>استمتع باللعبة!</li>
+            </ol>
+            <p><strong>ملاحظة:</strong> قد تحتاج إلى السماح بتشغيل البرامج عند الطلب الأول</p>
+        </div>
+    </div>
+
+    <script>
+        function launchGame() {
+            const statusDiv = document.getElementById('status');
+            
+            // Show loading status
+            statusDiv.className = 'status loading';
+            statusDiv.innerHTML = `
+                <div class="spinner"></div>
+                <p>جاري تشغيل اللعبة... يرجى الانتظار</p>
+            `;
+            
+            // Try to run the batch file
+            try {
+                // Create a hidden iframe to run the batch file
+                const iframe = document.createElement('iframe');
+                iframe.style.display = 'none';
+                iframe.src = 'launch-game.bat';
+                document.body.appendChild(iframe);
+                
+                // After a delay, show success message
+                setTimeout(() => {
+                    statusDiv.className = 'status success';
+                    statusDiv.innerHTML = `
+                        <p>✅ تم تشغيل اللعبة بنجاح!</p>
+                        <p>الآن اضغط على زر المعاينة لفتح اللعبة في المتصفح</p>
+                        <button onclick="openGame()" style="background: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin-top: 10px;">
+                            🌐 معاينة اللعبة
+                        </button>
+                    `;
+                }, 3000);
+            } catch (error) {
+                statusDiv.className = 'status error';
+                statusDiv.innerHTML = `
+                    <p>❌ حدث خطأ أثناء تشغيل اللعبة</p>
+                    <p>يرجى تشغيل ملف launch-game.bat يدوياً</p>
+                `;
+            }
+        }
+        
+        function openGame() {
+            window.open('http://localhost:4173', '_blank');
+        }
+    </script>
+</body>
+</html>
